@@ -1,0 +1,16 @@
+.productCard {
+    width: 190px;
+    height: 344px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 18px -3px #ddd;
+    align-items: center;
+    padding: 20px 3px;
+    justify-content: flex-start;
+}
+.productCard > img {
+    width: 150px;
+    height: 150px;
+}
