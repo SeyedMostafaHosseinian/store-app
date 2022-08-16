@@ -71,7 +71,7 @@
     -webkit-text-stroke: 0.3px;
 }
 .cartButton span {
-    background-color: #3C8FBD;
+    background-color: #0089ff;
     color: #fff;
     border-radius: 10px;
     padding: 2px 3px;
@@ -104,6 +104,6 @@
     -webkit-text-stroke: 0.2px #000;
 }
 .activePageLink {
-    color: #3C8FBD !important;
+    color: #0089ff !important;
 }
 

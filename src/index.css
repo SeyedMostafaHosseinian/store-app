@@ -2,6 +2,14 @@
   font-family: iranYekan;
   src: url("./fonts/iranyekanwebregular.ttf") format('truetype');
 }
+@font-face {font-family: "Yekan-Numbers Regular";
+  src: 
+  url("./fonts/123103d064093ff198b61fa9330b0d8f.eot") format("embedded-opentype"), 
+  url("./fonts/123103d064093ff198b61fa9330b0d8f.woff2") format("woff2"), 
+  url("./fonts/123103d064093ff198b61fa9330b0d8f.woff2") format("woff"), 
+  url("./fonts/123103d064093ff198b61fa9330b0d8f.ttf") format("truetype"), 
+  url("./fonts/123103d064093ff198b61fa9330b0d8f.svg#Yekan-Numbers Regular") format("svg");
+}
 * {
   margin: 0;
   padding: 0;

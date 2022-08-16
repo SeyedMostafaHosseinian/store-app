@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "./SliderMainBanner.css";
 
 // import required modules
-import { Pagination , Autoplay , Navigation} from "swiper";
+import { Pagination , Autoplay , Navigation } from "swiper";
 
 //images
 import mainBanner from "../../assets/mainbanner1.png";
@@ -23,15 +23,16 @@ const SliderMainBanner = () => {
     <Swiper
     spaceBetween={30}
     centeredSlides={true}
+    loop={true}
     autoplay={{
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
     }}
     pagination={{
       clickable: true,
     }}
     navigation={false}
-    modules={[Autoplay, Pagination, Navigation]}
+    modules={[Autoplay, Pagination, Navigation ]}
     className="mySwiper" >
 
       <SwiperSlide>
