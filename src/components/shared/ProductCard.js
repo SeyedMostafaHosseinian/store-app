@@ -10,12 +10,11 @@ import plusIcon from "../../assets/plus.svg";
 import subtractionIcon from "../../assets/subtraction.svg";
 
 const ProductCard = ({data}) => {
-    const {title , image , price  , like } = data;
-    console.log(changeNumberToPersian(price))
+    const {title , image , price  , like,id } = data;
     return (
         <div className={styles.productCard}>
             <img src={image} alt="thumbnail"/>
-            <h4>{titleShorter(title) }</h4>
+            <h4>{titleShorter(title,50) }</h4>
             <span>{changeNumberToPersian(price.toLocaleString())} تومان</span>
             <div className={styles.productButtons}>
                 <div className={styles.quantityButtons}>
@@ -37,6 +36,7 @@ const ProductCard = ({data}) => {
                 </button>
             </div>
             {/* <button className={styles.addToCart}>افزودن به سبد خرید</button> */}
+            
         </div>
     );
 };

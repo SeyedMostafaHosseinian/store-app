@@ -12,6 +12,8 @@ export const ProductDataContext = createContext()
 const ProductsDataContextProvider = ({children}) => {
     
     const [products,setProducts] = useState([])
+
+
     useEffect(() => {
         const fetchAPI = async() => {
             setProducts(await getProducts())

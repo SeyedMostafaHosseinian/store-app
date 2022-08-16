@@ -1,7 +1,7 @@
-export const titleShorter = (title) => {
+export const titleShorter = (title,n) => {
     const shortedTitle= []
     const spiltedTitle = title.split("")
-    for(let i = 0; i<=50; i++) {
+    for(let i = 0; i<=n; i++) {
         shortedTitle.push(spiltedTitle[i])
     }
     shortedTitle.push("...")

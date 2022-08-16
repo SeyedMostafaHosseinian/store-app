@@ -7,3 +7,10 @@ export const getProducts  = async() => {
      return response.data;
 
  }
+export const getBlogs  = async() => {
+    const BASE_URL = "https://digistore.glitch.me";
+     const response = await axios.get(`${BASE_URL}/blogs`) 
+
+     return response.data;
+
+ }

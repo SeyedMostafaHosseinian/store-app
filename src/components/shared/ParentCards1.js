@@ -14,17 +14,18 @@ import { Pagination , Navigation, Autoplay } from "swiper";
 
 //components
 import ProductCard from './ProductCard';
+import BlogCard from './BlogCard';
 
-const ParentCards1 = ({products}) => {
+const ParentCards1 = ({data,slides,sectionType}) => {
     return (
         <>
         <Swiper
-          slidesPerView={6}
+          slidesPerView={slides}
           spaceBetween={12}
           pagination={false}
           navigation={false}
           slidesPerGroup={3}
-          loop={true}
+          loop={false}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -32,10 +33,23 @@ const ParentCards1 = ({products}) => {
           modules={[Pagination , Navigation , Autoplay]}
           className="mySwiper"
         >
-            {products.map(item =>  
+            {
+                sectionType === "products" &&
+                data.map(item =>  
                 <SwiperSlide key={item.id}>
                     <ProductCard key={item.id} data={item} />
-                </SwiperSlide> )}
+                </SwiperSlide> )
+                
+            }
+            {
+                sectionType === "blogs" &&
+                                          
+                data.map(item => 
+                <SwiperSlide key={item.id} >
+                    <BlogCard key={item.id} data={item} />
+                </SwiperSlide>)
+
+            }
         </Swiper>
       </>
     );
