@@ -58,19 +58,20 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 .quantityButtons {
-    width: 70px;
-    height: 30px;
+    width: 72px;
+    height: 32px;
     border-radius: 5px;
     border: 1px solid #d1d1d1;
-}
-.quantityButtons { 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 5px;
+    padding: 2px 7px;
+    
 }
+
 .quantityButtons button { 
     border: none;
     background-color: #ffffff00;
@@ -78,14 +79,18 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
-.quantityButtons button { 
-    width: 10.43px;
+.quantityButtons button img { 
+    width: 11.43px;
+ 
 }
-
 .quantityButtons span { 
     margin: 0;
     font-size: 12px;
     -webkit-text-stroke: none;
     color: #9B9B9B;
+}
+.unactiveButton {
+    opacity: 0.7;
 }

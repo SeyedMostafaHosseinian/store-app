@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 //styles
 import styles from "./Navbar.module.css";
@@ -10,7 +10,11 @@ import userIcon from "../../assets/user.svg";
 import cartIcon from "../../assets/cart.svg";
 
 
+//cart data
+import { cartContext } from '../contexts/CartContextProvider';
+import { changeNumberToPersian } from '../../helper/functions';
 const Navbar = () => {
+    const{cart} = useContext(cartContext)
     return (
         <div className={styles.navbar}>
           <div className={styles.row1}>
@@ -28,7 +32,7 @@ const Navbar = () => {
                 </a>
                 <a className={styles.cartButton}>
                     <img src={cartIcon}  alt="user"/>
-                    <span>0</span>
+                    <span>{changeNumberToPersian(cart.total)}</span>
                 </a>
 
             </div>

@@ -22,7 +22,7 @@ const App = () => {
           <Switch>
             <Route path="/"  component={Landing} />
           </Switch>
-         {/* <Footer /> */}
+         <Footer />
       </CartContextProvider>
     </BlogDataContextProvider>
   </ProductsDataContextProvide>  

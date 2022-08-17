@@ -29,9 +29,6 @@ const Landing = () => {
     const productsData  = useContext(ProductDataContext)
     const blogsData = useContext(BlogDataContext)
 
-    console.log(productsData)
-    console.log(blogsData)
-
     return (
         <div className={styles.landing}>
             <div className={styles.lRow1}>

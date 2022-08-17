@@ -26,10 +26,13 @@ const ParentCards1 = ({data,slides,sectionType}) => {
           navigation={false}
           slidesPerGroup={3}
           loop={false}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          autoplay={
+        //    {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        //    }
+            false
+          }
           modules={[Pagination , Navigation , Autoplay]}
           className="mySwiper"
         >

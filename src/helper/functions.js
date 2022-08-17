@@ -35,3 +35,10 @@ export const changeNumberToPersian = (price) => {
 
     return changedDidits;
 }
+export const getQuantity = (cart,id) => {
+    if(cart.find(item => item.id === id) !== undefined) {
+       const focusedItem = cart.find(item => item.id === id)
+       const quantity = focusedItem.quantity
+       return quantity
+    }
+}
