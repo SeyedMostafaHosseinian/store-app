@@ -73,13 +73,16 @@
 .cartButton span {
     background-color: #0089ff;
     color: #fff;
-    border-radius: 10px;
-    padding: 2px 3px;
-    font-size: 12px;
+    border-radius: 4px;
+    font-size: 10px;
     position: absolute;
-    top: -7px;
-    right: -4px;
-
+    top: -8px;
+    right: -8px;
+    width: 18px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .row2 {
     display: flex;

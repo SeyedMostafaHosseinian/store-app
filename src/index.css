@@ -17,4 +17,7 @@
   direction: rtl;
   font-family: "iranYekan" !important;
 }
-
+.activeLike {
+  stroke: red;
+  fill: red;
+}

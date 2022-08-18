@@ -10,7 +10,9 @@ import BlogDataContextProvider from './components/contexts/BlogDataContextProvid
 //components
 import Navbar from './components/shared/Navbar';
 import Landing from './components/Landing';
+import Cart from './components/Cart';
 import Footer from './components/shared/Footer';
+import Shop from './components/Shop';
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
       <CartContextProvider>
          <Navbar />
           <Switch>
+            <Route path="/cart"  component={Cart} />
+            <Route path="/shop"  component={Shop} />
             <Route path="/"  component={Landing} />
           </Switch>
          <Footer />

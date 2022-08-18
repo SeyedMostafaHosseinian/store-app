@@ -1,0 +1,87 @@
+.shop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 83px;
+    align-items: center;
+}
+.row1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.pageAdress {
+    display: flex;
+    align-items: center;
+}
+.pageAdress img {
+    width: 17px;
+    height: 17px;
+}
+.pageAdress img:nth-child(2) {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+}
+.pageAdress span  {
+    color: #7B7B7B;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.row1 h4 {
+    font-size: 14px;
+    color: #787878;
+}
+.row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.rightSide {
+
+}
+.leftSide {
+    width: 83.5%;
+    margin-top: 40px;
+}
+.fiterBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+}
+.rigthFilter {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.rigthFilter button {
+    border: none;
+    background-color: #ffffff00;
+    color: #868686;
+    cursor: pointer;
+
+}
+.activeFilter {
+    color: #0089FF !important;
+}
+.leftFilter {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.productCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,190px);
+    gap: 8px;
+    justify-content: flex-end;
+}

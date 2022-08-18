@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className={styles.row1}>
             <img src={logo}  alt="logo"/>
             <form className={styles.searchBox}>
-                <input type="text" placeholder='جستجوی محصولات...' />
+                <input type="text" placeholder='جستجوی محصولات.' />
                 <button type="submit">
                     <img src={searchIcon} alt="icon"/>
                 </button>
@@ -42,9 +42,9 @@ const Navbar = () => {
            <div className={styles.row2}>
             <ul>
                 <li><Link className={styles.activePageLink} to="/">صفحه نخست</Link></li>
-                <li><Link to="/"> فروشگاه</Link></li>
-                <li><Link to="/"> سبد خرید</Link></li>
-                <li><Link to="/"> بلاگ</Link></li>
+                <li><Link to="/shop"> فروشگاه</Link></li>
+                <li><Link to="/cart"> سبد خرید</Link></li>
+                <li><Link to="/blog"> بلاگ</Link></li>
                 <li><Link to="/"> درباره ما</Link></li>
                 <li><Link to="/"> سورس کد</Link></li>
             </ul>
