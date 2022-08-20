@@ -59,16 +59,18 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    width: 16%;
+    height: 100%;
 }
 .quantityButtons {
-    width: 72px;
+    width: 50%;
     height: 32px;
     border-radius: 5px;
     border: 1px solid #d1d1d1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 7px;
+    padding: 2px 3px;
     
 }
 
@@ -80,6 +82,8 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    height: 100%;
+    width: 30%;
 }
 .quantityButtons button img { 
     width: 11.43px;
@@ -95,6 +99,6 @@
     opacity: 0.7;
 }
 .likeButton path {
-    transition: all 0.3s ease-in-out;
+ 
 
 }

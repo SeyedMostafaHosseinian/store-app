@@ -18,6 +18,49 @@
   font-family: "iranYekan" !important;
 }
 .activeLike {
-  stroke: red;
-  fill: red;
+  animation: like  0.5s  1 alternate  linear;
+  transform-origin: center;
+}
+.activeLike path{
+    stroke: red;
+    fill: red;
+}
+@keyframes like {
+  0% {
+    width: 19px;
+    height: 19px;
+  }
+  10% {
+    width: 26px;
+    height: 26px;
+  }
+  51% {
+    /* width: 19px;
+    height: 19px; */
+    transform: scale(1);
+  }
+  55% {
+    /* width: 26px;
+    height: 26px; */
+    transform: scale(1.2);
+
+  }
+  60% {
+    /* width: 26px;
+    height: 26px; */
+    transform: scale(1.2);
+
+  }
+  96% {
+    /* width: 19px;
+    height: 19px; */
+    transform: scale(1);
+
+  }
+  100% {
+    /* width: 19px;
+    height: 19px; */
+    transform: scale(1);
+  }
+
 }

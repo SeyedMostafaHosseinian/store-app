@@ -28,7 +28,10 @@ const Shop = () => {
             </div>
             <div className={styles.row2}>
                 <div className={styles.rightSide}>
-
+                    <div className={styles.searchBox}>
+                     <input type="text" placeholder='جستجوی محصولات'/>
+                     <img src={arialeftIcon} alt="icon"/>
+                    </div>
                 </div>
                 <div className={styles.leftSide}>
                   <div className={styles.fiterBox}>
