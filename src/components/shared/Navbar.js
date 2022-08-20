@@ -26,14 +26,14 @@ const Navbar = () => {
                 </button>
             </form>
             <div className={styles.row1Cul3}>
-                <a className={styles.loginButton}>
+                <Link to="/" className={styles.loginButton}>
                     <img src={userIcon}  alt="user"/>
                     ورود / ثبت نام
-                </a>
-                <a className={styles.cartButton}>
+                </Link>
+                <Link to="/cart" className={styles.cartButton}>
                     <img src={cartIcon}  alt="user"/>
                     <span>{changeNumberToPersian(cart.total)}</span>
-                </a>
+                </Link>
 
             </div>
             

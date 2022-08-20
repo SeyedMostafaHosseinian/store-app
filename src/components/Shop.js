@@ -6,6 +6,8 @@ import styles from "./Shop.module.css";
 //icons 
 import homeIcon from "../assets/home.svg";
 import arialeftIcon from "../assets/aria-left.svg";
+
+
 //product data
 import { ProductDataContext } from './contexts/ProductsDataContextProvider';
 import ProductCard from './shared/ProductCard';

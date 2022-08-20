@@ -12,6 +12,8 @@ const CartContextProvider = ({children}) => {
     const initialState = {
         selectedItems : [],
         total:0,
+        totalPrice:0,
+        checkout:false,
     }
     
     const cartReducer = (state,action) => {
@@ -22,45 +24,78 @@ const CartContextProvider = ({children}) => {
                 state.selectedItems.push({
                 ...newSelectedItem,
                 quantity:1
-            })
-            state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
-               
+                })
+                state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
+                state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
             return {
                 ...state,
                 selectedItems:[...state.selectedItems],
-                total:state.total
+                total:state.total,
+                totalPrice:state.totalPrice,
+                checkout:false
             } 
             case"UP_QUANTITY" :
                 const uItem = state.selectedItems.find(item => item.id === action.id)
                 uItem.quantity ++; 
                 state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
-
+                state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
             return {
                 ...state,
                 selectedItems:[...state.selectedItems],
-                total:state.total
+                total:state.total,
+                totalPrice:state.totalPrice,
+                checkout:false
+
             }
             case"DOWN_QUANTITY" :
             
                const dItem = state.selectedItems.find(item => item.id === action.id)
                dItem.quantity --; 
                state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
+               state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
                
             return {
                 ...state,
                 selectedItems:[...state.selectedItems],
-                total:state.total
+                total:state.total,
+                totalPrice:state.totalPrice,
+                checkout:false
+
             }      
             case"CLEAR_ITEM":
                  
                state.selectedItems = state.selectedItems.filter(item => item.id !== action.id )
                state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
-                return {
+               state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
+             
+            return {
                  ...state,
                  selectedItems:[...state.selectedItems],
-                 total:state.total
+                 total:state.total,
+                 totalPrice:state.totalPrice,
+                 checkout:false
 
-                }
+  
+            }
+            case"CHECKOUT":
+                
+            return {
+                selectedItems : [],
+                total:0,
+                totalPrice:0,
+                checkout:true,
+
+            }
+            case"CLAER_CART":
+
+            return {
+                selectedItems : [],
+                total:0,
+                totalPrice:0,
+                checkout:false,
+            }
+            default:
+            return state
         }
     }
 

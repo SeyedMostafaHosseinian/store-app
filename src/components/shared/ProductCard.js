@@ -1,4 +1,4 @@
-import React, { useContext, useState , useRef } from 'react';
+import React, { useContext , useRef } from 'react';
 import { changeNumberToPersian, getQuantity, titleShorter } from '../../helper/functions';
 
 //styles
@@ -8,6 +8,7 @@ import styles from "./ProductCard.module.css";
 import trashIcon from "../../assets/trash.svg";
 import plusIcon from "../../assets/plus.svg";
 import subtractionIcon from "../../assets/subtraction.svg";
+import addToCartIcon  from "../../assets/add-to-cart.svg";
 
 import { cartContext } from '../contexts/CartContextProvider';
 
@@ -15,7 +16,7 @@ const ProductCard = ({data}) => {
 
     const likeSvg = useRef(null)
 
-    const {title , image , price  , like,id } = data;
+    const {title , image , price ,id } = data;
 
     const {cart,dispatch} = useContext(cartContext)
     
@@ -37,20 +38,20 @@ const ProductCard = ({data}) => {
 
                     <div className={styles.quantityButtons}>
 
-                        {!quantity  && <button onClick={ () => dispatch({type:"ADD_TO_CART", id})}><img src={plusIcon} alt="icon"/></button>}
+                        {!quantity  && <button className={styles.addToCart} onClick={ () => dispatch({type:"ADD_TO_CART", id})}><img  src={addToCartIcon} alt="icon"/></button>}
                         
-                        {quantity >= 1 && <button onClick={ () => dispatch({type:"UP_QUANTITY", id})}><img src={plusIcon} alt="icon"/></button>}
+                        {quantity >= 1 && <button className={styles.upButton} onClick={ () => dispatch({type:"UP_QUANTITY", id})}><img src={plusIcon} alt="icon"/></button>}
                      
                         <span>{quantity ? changeNumberToPersian(quantity) : changeNumberToPersian(0)  }</span>
                         
                         {quantity === 1 && <button onClick={ () => dispatch({type:"CLEAR_ITEM", id})} className={styles.unactiveButton}><img src={subtractionIcon}  alt="icon"/></button>}
                         
-                        {quantity > 1 && <button onClick={ () => dispatch({type:"DOWN_QUANTITY", id})} className={styles.unactiveButton}><img src={subtractionIcon}  alt="icon"/></button>}
+                        {quantity > 1 && <button className={styles.downButton} onClick={ () => dispatch({type:"DOWN_QUANTITY", id})} className={styles.unactiveButton}><img src={subtractionIcon}  alt="icon"/></button>}
                         
                         {!quantity && <button className={styles.unactiveButton}><img src={subtractionIcon}  alt="icon"/></button>}
                       
                    </div>
-                   
+
                         {!quantity && <button  className={styles.unactiveButton}><img src={trashIcon} alt="icon" /></button>}
                         
                         {quantity >= 1 && <button onClick={ () => dispatch({type:"CLEAR_ITEM", id})}  className={styles.unactiveButton}><img src={trashIcon} alt="icon" /></button>}
@@ -61,7 +62,7 @@ const ProductCard = ({data}) => {
                      </svg>
                    </button>
                   </div>
-            {/* <button className={styles.addToCart}>افزودن به سبد خرید</button> */}
+            
         </div>
     );
 };

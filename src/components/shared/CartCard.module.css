@@ -1,53 +1,60 @@
-.productCard {
-    width: 190px;
-    height: 344px;
-    border-radius: 10px;
-    background: #fff;
+.cartCard {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    box-shadow: 0 3px 14px -4px #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 8px -1px #ddd;;
+    height: 200px;
+    margin: 10px 0;
     align-items: center;
-    padding: 20px 10px;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 21px 15px;
 }
-.productCard > img {
+.cartCard > img {
     width: 150px;
     height: 150px;
 }
-.productCard h4 {
-    font-size: 12px;
-    color: #6c6c6c;
-    margin-top: 10px;
-    font-weight: normal;
-    height: 60px;
+.cardLeft {
+    width: 76%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
-.productCard span {
+.topLeftCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.topLeftCard h4 {
     font-size: 14px;
-    /* font-weight: bold; */
-    margin-top: 10px;
-    -webkit-text-stroke: 0.3px;
+    font-weight: normal;
+    width: 77%;
+
+}
+.topLeftCard span {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+.buttomLeftCard {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .addToCart img {
-    width: 14px !important;
-    height: 15px;
-}
-.upButton img {
-    width: 11px;
-    height: 11px;
-}
-.downButton img , .unactiveButton img {
-    width: 11px;
-    height: 2px;
+    width: 15px !important;
+    height: 21px;
 }
 .productButtons {
-    width: 154px;
+    width: 30%;
     height: 35px;
     border-radius: 5px;
     margin-top: 30px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 .productButtons > button {
@@ -59,14 +66,9 @@
     transition: all 0.3s ease-in-out;
     width: 16%;
     height: 100%;
-    
-}
-.productButtons > button > img  {
-    width: 16px;
-    height: 18px;
 }
 .quantityButtons {
-    width: 53%;
+    width: 50%;
     height: 32px;
     border-radius: 5px;
     border: 1px solid #d1d1d1;
@@ -74,8 +76,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 2px 3px;
+    margin-left: 15px;
+    
 }
-
 .quantityButtons button { 
     border: none;
     background-color: #ffffff00;
@@ -89,6 +92,7 @@
 }
 .quantityButtons button img { 
     width: 11.43px;
+ 
 }
 .quantityButtons span { 
     margin: 0;
@@ -98,11 +102,4 @@
 }
 .unactiveButton {
     opacity: 0.7;
-}
-.likeButton path {
- 
-
-}
-.addToCart img {
-
 }

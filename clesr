@@ -1,0 +1,47 @@
+[33mcommit a7563e1770d41c709c661ff273805edd95f39435[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Sat Aug 20 07:23:47 2022 +0430
+
+    continiu deploy shop page
+
+[33mcommit 55e6407cdab708f7d7809870258c7b798688a052[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Thu Aug 18 15:49:12 2022 +0430
+
+    creat shop page
+
+[33mcommit d419526177b19f6d1d8e4619a97ad36ff1f162b5[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Wed Aug 17 14:43:05 2022 +0430
+
+    Completing the process of adding and removing products to the shopping cart
+
+[33mcommit f1966ad3777ee24bdb754a4c05fa7a7d68c56d35[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Tue Aug 16 19:32:41 2022 +0430
+
+    creating blogs section
+
+[33mcommit 939ee2451a20c52dbd525178e73938c2d47b70d8[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Tue Aug 16 10:58:15 2022 +0430
+
+    Implementation of the slider section of new products
+
+[33mcommit c600879b5ced17d9646f14b40b0c43d2532c1028[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Tue Aug 16 07:32:47 2022 +0430
+
+    create navbar and landing page
+
+[33mcommit fb1b40ccb0c8e534c33a0bde807f3eb6d86233bc[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Sun Aug 14 18:12:20 2022 +0430
+
+    start project :)
+
+[33mcommit f24c147e54ec8ff28b3a098840a4ff70787a89f0[m
+Author: SeyedMostafaHosseinian <seyedmostafainsta786@gmail.com>
+Date:   Sun Aug 14 18:00:29 2022 +0430
+
+    Initialize project using Create React App
