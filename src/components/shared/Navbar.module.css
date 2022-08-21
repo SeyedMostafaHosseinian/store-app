@@ -113,5 +113,233 @@
 }
 .activePageLink {
     color: #0089ff !important;
+    -webkit-text-stroke: 0.3px #0089ff;
+}
+.responsiveNavbar {
+    width: 100%;
+    padding: 0 15px;
+}
+.hamburgerButton {
+    width: 14px;
+    height:12px ;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff0;
+    border: none;
+}
+.hamburgerButton div{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+.topRes {
+    height: 48px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f1;
+}
+.resLogo {
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resLogo img {
+    width: 92px;
+    height: 22px;
+}
+.resCul3 {
+    /* width: 30%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttomRes {
+    height: 50px;
+    border-bottom: 1px solid #f0f0f1;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.resSearchBox {
+    width: 70%;
+    position: relative;
+}
+.searchBox form {
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* position: relative; */
+}
+.resSearchBox form input { 
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9;
+    padding: 2px 15px;
+    font-size: 12px;
+}
+.resSearchBox form button { 
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    left: 15px;
+    top: 11px;
+}
+.resSearchBox form button img { 
+    width: 15px;
+    height: 19px;
+}
+.resLogin {
+    width: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.resLogin img {
+    width: 19px;
+    height: 19px;
+}
+.resCartButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    -webkit-text-stroke: 0.3px;
+    text-decoration: none;
+    color: #000 !important;
+    
+}
+.resCartButton  {
+    cursor: pointer;
+    -webkit-text-stroke: 0.3px;
+    text-decoration: none;
+    color: #000 !important;
+}
+.resCartButton img  {
+    width: 18px;
 }
 
+.resCartButton span {
+    background-color: #0089ff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 10px;
+    position: absolute;
+    top: -7px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburgerMenu {
+    width: 76%;
+    background-color: #ffffff;
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 15px;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 90;
+    transform: translateX(101%);
+    transition: all 0.3s ease-in-out;
+}
+
+.hamRow1 {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f1;
+    padding-bottom: 10px;
+}
+.hamRow1 img{
+    width: 92px;
+    height: 22px;
+}
+.hamburgerMenu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 5px;
+}
+ .hamburgerMenu ul li {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburgerMenu ul li a {
+    color: #42474E;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    -webkit-text-stroke: 0.18px;
+}
+.hamburgerMenu ul li a img , .hamburgerMenu ul li a svg { 
+    width: 18px;
+    height: 18px;
+    margin-left: 13px;
+    opacity: 0.7;
+}
+.menuCloser {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 20;
+    display: none;
+    top: 0;
+    bottom: 0;
+ 
+}
+/*Responsive Styles*/
+
+@media (max-width:1200px) {
+
+}
+@media (max-width:992px) { 
+    .navbar , .row1 , .row2 , .line {
+        display: none;
+    }
+    .hamburgerButton , 
+    .topRes , 
+    .buttomRes , 
+    .hamburgerMenu {
+        display: flex;
+    }
+}
+@media (max-width:768px) { 
+
+}
+@media (max-width:576px) { 
+
+}
+@media (max-width:460px) {
+
+}
+@media (max-width:400px) { 
+
+}

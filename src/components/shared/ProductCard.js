@@ -31,7 +31,7 @@ const ProductCard = ({data}) => {
     return (
         <div className={styles.productCard}>
             <img src={image} alt="thumbnail"/>
-            <h4>{titleShorter(title,50) }</h4>
+            <h4>{titleShorter(title,45) }</h4>
             <span>{changeNumberToPersian(price.toLocaleString())} تومان</span>
 
                 <div className={styles.productButtons}>
@@ -46,7 +46,7 @@ const ProductCard = ({data}) => {
                         
                         {quantity === 1 && <button onClick={ () => dispatch({type:"CLEAR_ITEM", id})} className={styles.unactiveButton}><img src={subtractionIcon}  alt="icon"/></button>}
                         
-                        {quantity > 1 && <button className={styles.downButton} onClick={ () => dispatch({type:"DOWN_QUANTITY", id})} className={styles.unactiveButton}><img src={subtractionIcon}  alt="icon"/></button>}
+                        {quantity > 1 && <button className={styles.downButton} onClick={ () => dispatch({type:"DOWN_QUANTITY", id})} className={styles.unactiveButton} ><img src={subtractionIcon}  alt="icon"/></button>}
                         
                         {!quantity && <button className={styles.unactiveButton}><img src={subtractionIcon}  alt="icon"/></button>}
                       

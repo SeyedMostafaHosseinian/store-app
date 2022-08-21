@@ -24,16 +24,20 @@ const SliderMainBanner = () => {
     spaceBetween={30}
     centeredSlides={true}
     loop={true}
-    autoplay={{
-      delay: 3000,
-      disableOnInteraction: false,
-    }}
+    autoplay={
+    //   {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    //  }
+    false
+    }
     pagination={{
       clickable: true,
     }}
     navigation={false}
     modules={[Autoplay, Pagination, Navigation ]}
     className="mySwiper" >
+
 
       <SwiperSlide>
         <img src={mainBanner} alt="banner"/>

@@ -26,7 +26,7 @@ const App = () => {
             <Route path="/shop"  component={Shop} />
             <Route path="/"  component={Landing} />
           </Switch>
-         <Footer />
+         {/* <Footer /> */}
       </CartContextProvider>
     </BlogDataContextProvider>
   </ProductsDataContextProvide>  

@@ -20,7 +20,7 @@ const ParentCards1 = ({data,slides,sectionType}) => {
     return (
         <>
         <Swiper
-          slidesPerView={slides}
+        //   slidesPerView={slides}
           spaceBetween={12}
           pagination={false}
           navigation={false}
@@ -35,6 +35,42 @@ const ParentCards1 = ({data,slides,sectionType}) => {
           }
           modules={[Pagination , Navigation , Autoplay]}
           className="mySwiper"
+          breakpoints={{
+            1366: {
+             slidesPerView: slides.dp,
+            },
+            1200:{
+             slidesPerView: slides.lp,
+            },
+            992:{
+             slidesPerView:slides.tt,
+             slidesPerGroup:1
+            },
+            768:{
+             slidesPerView:slides.mt,
+             slidesPerGroup:1
+            },
+            576:{
+             slidesPerView:slides.mt,  
+            },
+            460: {
+             slidesPerView: slides.lm,
+             slidesPerGroup:1
+             },
+            400: {
+             slidesPerView: slides.lm,
+             slidesPerGroup:1
+            },
+            300:{
+             slidesPerView: slides.lm,
+             slidesPerGroup:1
+            },
+            200:{
+             slidesPerView: slides.sm,
+             slidesPerGroup:1
+            }
+       
+          }}
         >
             {
                 sectionType === "products" &&

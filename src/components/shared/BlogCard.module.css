@@ -102,3 +102,65 @@
 
 
 
+/*Responsive Styles*/
+
+@media (max-width:1360px) {
+    .BlogCard {
+        width: 260px;
+        height: 367px;
+    }    
+    
+    .BlogCard > img { 
+        width: 235px;
+        height: 157px;
+    }
+    .BlogCard h4 { 
+        font-size: 12px;
+    }
+    .BlogCard p {
+        font-size: 10px;
+
+    } 
+    .readMoreButton  { 
+        width: 72px;
+    }
+    .dateShared { 
+        width: 60px;
+    }
+    .likeContainer , .postViews {
+        width: 42px;
+    }
+
+}
+@media (max-width:1200px) { 
+    .BlogCard {
+        width: 220px;
+        height: 327px;
+    }    
+    .BlogCard > img { 
+        width: 200px;
+        height: 124px;
+    }
+    .dateShared { 
+        width: 57px;
+    }
+    .likeContainer , .postViews {
+        width: 30px;
+    }
+}
+@media (max-width:992px) { 
+
+}
+@media (max-width:768px) { 
+
+}
+@media (max-width:576px) { 
+
+}
+@media (max-width:460px) {
+
+}
+@media (max-width:400px) { 
+
+
+}
