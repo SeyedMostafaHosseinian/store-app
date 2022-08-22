@@ -134,18 +134,21 @@
 }
 @media (max-width:1200px) { 
     .BlogCard {
-        width: 220px;
-        height: 327px;
+        width: 250px;
+        height: 330px;
     }    
     .BlogCard > img { 
-        width: 200px;
-        height: 124px;
+        width: 232px;
+        height: 145px;
+    }
+    .readMoreButton  { 
+        width: 78px;
     }
     .dateShared { 
-        width: 57px;
+        width: 64px;
     }
     .likeContainer , .postViews {
-        width: 30px;
+        width: 32px;
     }
 }
 @media (max-width:992px) { 

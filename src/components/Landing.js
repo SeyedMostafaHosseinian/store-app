@@ -82,7 +82,14 @@ const Landing = () => {
                 <img src={productIcon} alt="icon"/>
                 جدیدترین محصولات
             </h4>
-            <ParentCards1 data={productsData} slides={{dp:6,lp:5,tt:4,mt:3,lm:2,sm:1}} sectionType={"products"}/>
+            <ParentCards1 data={productsData} 
+              slides={{_1336:6,_1200:5,
+                       _992:4,_768:3,
+                       _576:2,_460:2,
+                       _400:1,_300:1,
+                       _200:1 }} 
+              sectionType={"products"}/>
+
           </div>
           <div className={styles.lRow4}>
                 <img src={halfBanner1} alt="banner"/>
@@ -93,7 +100,14 @@ const Landing = () => {
                     <img src={blogIcon} alt="icon"/>
                     جدیدترین مقالات
                 </h4>  
-                <ParentCards1 data={blogsData} slides={{dp:4,lp:4,tt:4,mt:3,lm:1,sm:1}} sectionType={"blogs"}/>
+                <ParentCards1 
+                  data={blogsData} 
+                  slides={{_1336:4,_1200:4,
+                           _992:4,_768:3,
+                           _576:2,_460:2,
+                           _400:1,_300:1,
+                           _200:1 }}  
+                  sectionType={"blogs"}/>
 
           </div>
     </div>

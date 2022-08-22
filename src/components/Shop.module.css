@@ -40,10 +40,7 @@
     justify-content: space-between;
     align-items: flex-start;
 }
-.rightSide {
-    margin-top: 130px;
-    width:16.3% ;
-}
+
 .searchBox {
     width: 100%;
     position: relative;
@@ -65,7 +62,7 @@
     outline: none;
 }
 .leftSide {
-    width: 83.3%;
+    width: 100%;
     margin-top: 40px;
 }
 .fiterBox {
@@ -101,8 +98,68 @@
 }
 .productCards {
     width: 100%;
-    display: grid;
-    grid-template-columns:repeat(auto-fit,190px);
-    gap: 8px;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width:1200px) {
+    .rigthFilter { 
+        width: 65%;
+    }
+    .rigthFilter button { 
+        font-size: 10px;
+    }
+    .leftFilter span { 
+        font-size: 12px;
+    }
+
+
+
+}
+@media (max-width:992px) {
+    .shop { 
+        padding: 0 15px;
+    }
+    .row1 {
+        margin-top: 8px;
+    }
+    .pageAdress img {
+        width: 13px;
+        height: 13px;
+    }
+    .pageAdress img:nth-child(2) {
+        width: 10px;
+        height: 10px;
+        margin-right: 4px;
+    }
+    .pageAdress span  {
+        color: #7B7B7B;
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .row1 h4 {
+        display: none;
+    }
+    .rigthFilter { 
+        display: none;
+    }
+
+}
+@media (max-width:768px) {
+  
+    
+}
+@media (max-width:576px) {
+  
+    
+}
+@media (max-width:460px) {
+  
+    
+}
+@media (max-width:400px) {
+  
+    
 }

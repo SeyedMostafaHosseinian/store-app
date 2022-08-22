@@ -195,3 +195,21 @@
     width: 300px;
     border-radius: 5px;
 }
+@media (max-width:576px) {
+    .emptyCart {
+        margin-top: 30px;
+    }
+    .emptyCart > img {
+        width: 100%;
+        border-radius: 0;
+    }
+    .emptyCart span , .checkout  span { 
+        font-size: 14px;
+    }
+    .emptyCart a  , .checkout a{ 
+        width: 170px;
+        font-size: 14px;
+    }
+
+
+}

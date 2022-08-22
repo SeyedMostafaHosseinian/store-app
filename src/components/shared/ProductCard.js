@@ -38,7 +38,7 @@ const ProductCard = ({data}) => {
 
                     <div className={styles.quantityButtons}>
 
-                        {!quantity  && <button className={styles.addToCart} onClick={ () => dispatch({type:"ADD_TO_CART", id})}><img  src={addToCartIcon} alt="icon"/></button>}
+                        {!quantity  && <button className={styles.addToCart} onClick={ () => dispatch({type:"ADD_TO_CART", id})}><img  src={plusIcon} alt="icon"/></button>}
                         
                         {quantity >= 1 && <button className={styles.upButton} onClick={ () => dispatch({type:"UP_QUANTITY", id})}><img src={plusIcon} alt="icon"/></button>}
                      

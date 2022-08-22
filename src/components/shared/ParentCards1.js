@@ -37,39 +37,38 @@ const ParentCards1 = ({data,slides,sectionType}) => {
           className="mySwiper"
           breakpoints={{
             1366: {
-             slidesPerView: slides.dp,
+             slidesPerView: slides._1336,
             },
             1200:{
-             slidesPerView: slides.lp,
+             slidesPerView: slides._1200,
             },
             992:{
-             slidesPerView:slides.tt,
+             slidesPerView:slides._992,
              slidesPerGroup:1
             },
             768:{
-             slidesPerView:slides.mt,
+             slidesPerView:slides._768,
              slidesPerGroup:1
             },
             576:{
-             slidesPerView:slides.mt,  
+             slidesPerView:slides._576,  
             },
             460: {
-             slidesPerView: slides.lm,
+             slidesPerView: slides._460,
              slidesPerGroup:1
              },
             400: {
-             slidesPerView: slides.lm,
+             slidesPerView: slides._400,
              slidesPerGroup:1
             },
             300:{
-             slidesPerView: slides.lm,
+             slidesPerView: slides._300,
              slidesPerGroup:1
             },
             200:{
-             slidesPerView: slides.sm,
+             slidesPerView: slides._200,
              slidesPerGroup:1
             }
-       
           }}
         >
             {
