@@ -13,8 +13,8 @@ import "./ParentCards1.css";
 import { Pagination , Navigation, Autoplay } from "swiper";
 
 //components
-import ProductCard from './ProductCard';
-import BlogCard from './BlogCard';
+import ProductCard from '../ProductCard/ProductCard';
+import BlogCard from '../BlogCard/BlogCard';
 
 const ParentCards1 = ({data,slides,sectionType}) => {
     return (

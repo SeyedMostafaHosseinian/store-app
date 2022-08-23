@@ -15,9 +15,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
-    border: 1px solid #efefef;
-    padding: 0 83px;
+    height: 65px;
+    padding: 10px 83px 0;
 
 }
 .searchBox {
@@ -92,9 +91,9 @@
 .row2 {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 13px 0;
+    padding: 12px 84px;
 }
 .row2 ul {
     list-style: none;
@@ -103,7 +102,7 @@
     align-items: center;
 }
 .row2 ul li { 
-    margin: 0 15px;
+    margin: 0 0 0 30px;
 }
 .row2 ul li a { 
     text-decoration: none;

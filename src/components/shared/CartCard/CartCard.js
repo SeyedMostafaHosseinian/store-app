@@ -4,17 +4,17 @@ import React, { useContext } from 'react';
 import styles from "./CartCard.module.css";
 
 //helpr functions
-import { changeNumberToPersian } from '../../helper/functions';
-import { titleShorter } from '../../helper/functions';
+import { changeNumberToPersian } from '../../../helper/functions';
+import { titleShorter } from '../../../helper/functions';
 
 //icons
-import trashIcon from "../../assets/trash.svg";
-import plusIcon from "../../assets/plus.svg";
-import subtractionIcon from "../../assets/subtraction.svg";
-import addToCartIcon  from "../../assets/add-to-cart.svg";
+import trashIcon from "../../../assets/trash.svg";
+import plusIcon from "../../../assets/plus.svg";
+import subtractionIcon from "../../../assets/subtraction.svg";
+import addToCartIcon  from "../../../assets/add-to-cart.svg";
 
 // cart data
-import { cartContext } from '../contexts/CartContextProvider';
+import { cartContext } from '../../contexts/CartContextProvider';
 
 const CartCard = ({data}) => {
    const {dispatch} = useContext(cartContext)

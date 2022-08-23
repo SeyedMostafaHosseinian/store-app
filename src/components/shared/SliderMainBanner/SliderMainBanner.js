@@ -12,9 +12,9 @@ import "./SliderMainBanner.css";
 import { Pagination , Autoplay , Navigation } from "swiper";
 
 //images
-import mainBanner from "../../assets/mainbanner1.png";
-import mainBanner2 from "../../assets/banner2.jpg";
-import mainBanner3 from "../../assets/banner3.jpg";
+import mainBanner2 from "../../../assets/banner2.jpg";
+import mainBanner3 from "../../../assets/banner3.jpg";
+import mainBanner4 from "../../../assets/banner4.jpg";
 
 
 
@@ -40,13 +40,13 @@ const SliderMainBanner = () => {
 
 
       <SwiperSlide>
-        <img src={mainBanner} alt="banner"/>
-      </SwiperSlide>
-      <SwiperSlide>
         <img src={mainBanner2} alt="banner"/>
       </SwiperSlide>
       <SwiperSlide>
         <img src={mainBanner3} alt="banner"/>
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={mainBanner4} alt="banner"/>
       </SwiperSlide>
 
 

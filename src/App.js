@@ -8,11 +8,11 @@ import ProductsDataContextProvide from './components/contexts/ProductsDataContex
 import BlogDataContextProvider from './components/contexts/BlogDataContextProvider';
 
 //components
-import Navbar from './components/shared/Navbar';
-import Landing from './components/Landing';
-import Cart from './components/Cart';
-import Footer from './components/shared/Footer';
-import Shop from './components/Shop';
+import Navbar from "./components/shared/Navbar/Navbar"
+import Landing from './components/Landing/Landing';
+import Cart from './components/Cart/Cart';
+import Footer from './components/shared/Footer/Footer';
+import Shop from './components/Shop/Shop';
 
 const App = () => {
   return (

@@ -5,22 +5,22 @@ import { Link } from 'react-router-dom';
 import styles from "./Navbar.module.css";
 
 //logo && icons
-import logo from "../../assets/logo.svg";
-import searchIcon from "../../assets/search.svg";
-import userIcon from "../../assets/user.svg";
-import cartIcon from "../../assets/cart.svg";
-import cartIcon2 from "../../assets/cart2.svg";
-import heartIcon from "../../assets/heart.svg";
-import homeIcon from "../../assets/home.svg";
-import shopIcon from "../../assets/shop.svg";
-import aboutusIcon from "../../assets/aboutus.svg";
-import githubIcon from "../../assets/github.svg";
+import logo from "../../../assets/logo.svg";
+import searchIcon from "../../../assets/search.svg";
+import userIcon from "../../../assets/user.svg";
+import cartIcon from "../../../assets/cart.svg";
+import cartIcon2 from "../../../assets/cart2.svg";
+import heartIcon from "../../../assets/heart.svg";
+import homeIcon from "../../../assets/home.svg";
+import shopIcon from "../../../assets/shop.svg";
+import aboutusIcon from "../../../assets/aboutus.svg";
+import githubIcon from "../../../assets/github.svg";
 
 //cart data
-import { cartContext } from '../contexts/CartContextProvider';
+import { cartContext } from '../../contexts/CartContextProvider';
 
 //helper functions
-import { changeNumberToPersian } from '../../helper/functions';
+import { changeNumberToPersian } from '../../../helper/functions';
 
 const Navbar = () => {
     const [show,setShow] = useState(false);
@@ -113,19 +113,19 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/">
+                            <Link to="/shop">
                               <img src={shopIcon} />
                                فروشگاه
                             </Link>
                         </li>
                         <li>
-                            <Link to="/">
+                            <Link to="/cart">
                               <img src={cartIcon2} />
                                سبد خرید
                             </Link>
                         </li>
                         <li>
-                            <Link to="/">
+                            <Link to="/blogs">
                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M6.75 13H0.5V14.25H6.75V13Z" fill="#7B7B7B"/>
                               <path d="M6.75 9.25H0.5V10.5H6.75V9.25Z" fill="#7B7B7B"/>
@@ -136,13 +136,13 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/">
+                            <Link to="/aboutus">
                               <img src={aboutusIcon} />
                                درباره ما 
                             </Link>
                         </li>
                         <li>
-                            <a href="/" >
+                            <a href="https://github.com/SeyedMostafaHosseinian/store-app.git" >
                               <img src={githubIcon} />
                                 گیت هاب 
                             </a>

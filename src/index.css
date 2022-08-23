@@ -72,3 +72,11 @@
   }
 
 }
+button:active {
+  border: none !important;
+  outline: none !important;
+}
+button:focus {
+  border: none !important;
+  outline: none !important;
+}

@@ -4,14 +4,14 @@ import React, { useContext } from 'react';
 import styles from "./Shop.module.css";
 
 //icons 
-import homeIcon from "../assets/home.svg";
-import arialeftIcon from "../assets/aria-left.svg";
+import homeIcon from "../../assets/home.svg";
+import arialeftIcon from "../../assets/aria-left.svg";
 
 
 //product data
-import { ProductDataContext } from './contexts/ProductsDataContextProvider';
-import ProductCard from './shared/ProductCard';
-import { changeNumberToPersian, numberTransitionCounter } from '../helper/functions';
+import { ProductDataContext } from '../contexts/ProductsDataContextProvider';
+import ProductCard2 from '../shared/ProductCard2/ProductCard2';
+import { changeNumberToPersian } from '../../helper/functions';
 
 const Shop = () => {
     const product = useContext(ProductDataContext)
@@ -39,12 +39,15 @@ const Shop = () => {
                         <button>ارزان ترین</button>
                         <button>گران ترین</button>
                     </div>
+                    <div className={styles.resRightFilter}>
+                        همه کالا ها
+                    </div>
                     <div className={styles.leftFilter}>
                         <span>{changeNumberToPersian(product.length)} کالا</span>
                     </div>
                   </div>  
                   <div className={styles.productCards}>
-                    { product.map(item => <ProductCard key={item.id} data={item} />)}
+                    { product.map(item => <ProductCard2 key={item.id} data={item} />)}
                   </div>
 
                 </div>

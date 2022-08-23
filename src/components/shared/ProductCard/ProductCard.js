@@ -1,16 +1,16 @@
 import React, { useContext , useRef } from 'react';
-import { changeNumberToPersian, getQuantity, titleShorter } from '../../helper/functions';
+import { changeNumberToPersian, getQuantity, titleShorter } from '../../../helper/functions';
 
 //styles
 import styles from "./ProductCard.module.css";
 
 //icons
-import trashIcon from "../../assets/trash.svg";
-import plusIcon from "../../assets/plus.svg";
-import subtractionIcon from "../../assets/subtraction.svg";
-import addToCartIcon  from "../../assets/add-to-cart.svg";
+import trashIcon from "../../../assets/trash.svg";
+import plusIcon from "../../../assets/plus.svg";
+import subtractionIcon from "../../../assets/subtraction.svg";
+import addToCartIcon  from "../../../assets/add-to-cart.svg";
 
-import { cartContext } from '../contexts/CartContextProvider';
+import { cartContext } from '../../contexts/CartContextProvider';
 
 const ProductCard = ({data}) => {
 
@@ -38,7 +38,7 @@ const ProductCard = ({data}) => {
 
                     <div className={styles.quantityButtons}>
 
-                        {!quantity  && <button className={styles.addToCart} onClick={ () => dispatch({type:"ADD_TO_CART", id})}><img  src={plusIcon} alt="icon"/></button>}
+                        {!quantity  && <button className={styles.upButton} onClick={ () => dispatch({type:"ADD_TO_CART", id})}><img  src={plusIcon} alt="icon"/></button>}
                         
                         {quantity >= 1 && <button className={styles.upButton} onClick={ () => dispatch({type:"UP_QUANTITY", id})}><img src={plusIcon} alt="icon"/></button>}
                      

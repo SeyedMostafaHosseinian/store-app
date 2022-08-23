@@ -5,7 +5,7 @@ import React from 'react';
 import styles from "./Footer.module.css";
 
 //images
-import logo from "../../assets/logo.svg";
+import logo from "../../../assets/logo.svg";
 const Footer = () => {
     return (
         <div className={styles.footer}>

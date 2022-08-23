@@ -1,26 +1,26 @@
 import React , {useContext} from 'react';
 
 //icons
-import homeIcon from "../assets/home.svg";
-import ariaLeftIcon from "../assets/aria-left.svg";
-import productIcon from "../assets/product-icon-white.svg";
-import factorIcon from "../assets/factor.svg";
-import listIcon from "../assets/list.svg";
-import checkoutCart from "../assets/checkout-cart.svg";
+import homeIcon from "../../assets/home.svg";
+import ariaLeftIcon from "../../assets/aria-left.svg";
+import productIcon from "../../assets/product-icon-white.svg";
+import factorIcon from "../../assets/factor.svg";
+import listIcon from "../../assets/list.svg";
+import checkoutCart from "../../assets/checkout-cart.svg";
 
 //images
-import emptyCart from "../assets/empty-cart.jpg";
-import ok3d from "../assets/ok3d.jpg";
+import emptyCart from "../../assets/empty-cart.jpg";
+import ok3d from "../../assets/ok3d.jpg";
 
 //styles
 import styles from "./Cart.module.css";
 
 //cart data
-import { cartContext } from './contexts/CartContextProvider';
+import { cartContext } from '../contexts/CartContextProvider';
 
 //components
-import CartCard from './shared/CartCard';
-import { changeNumberToPersian } from '../helper/functions';
+import CartCard from '../shared/CartCard/CartCard';
+import { changeNumberToPersian } from '../../helper/functions';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
