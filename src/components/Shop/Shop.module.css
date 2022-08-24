@@ -34,6 +34,8 @@
 .row1 h4 {
     font-size: 14px;
     color: #787878;
+    font-weight: normal;
+    -webkit-text-stroke: 0.2px;
 }
 .row2 {
     width: 100%;
@@ -59,7 +61,7 @@
     height: 80px;
 }
 .rigthFilter {
-    width: 55%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,17 +72,13 @@
     background-color: #ffffff00;
     color: #868686;
     cursor: pointer;
+    font-size: 11px;
 
 }
 .activeFilter {
     color: #0089FF !important;
 }
-.leftFilter {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
 
-}
 .leftFilter span {
     color: #868686;
 }
@@ -89,6 +87,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
     gap: 5px;
+    margin: 35px 0;
 
 }
 .resRightFilter {

@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-end;
     padding: 0 83px;
     margin-top: 30px;
@@ -9,11 +9,122 @@
 }
 .footerContainer {
     width: 100%;
-    /* background-color: #FDFDFD; */
     border-radius: 20px 20px 0 0;
     height: 264px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.about {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding:0 83px;
+}
+.about .rightAbout { 
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+.about .rightAbout img { 
+    width: 190px;
+}
+.about .leftAbout { 
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+.about .leftAbout h4 {
+    width: 30%;
+    color: #0089ff;
+    border-bottom: 2px solid #0089ff;
+    padding-bottom: 5px;
+
+}
+.about .leftAbout p {
+    line-height: 25px;
+    color: #2f3640;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/*Responsive Styles*/
+
+@media (max-width:1200px) {
+
+
+  
+}
+@media (max-width:992px) { 
+    .about {
+        padding: 0 15px;
+    }
+    .about .rightAbout {
+        width: 18%;
+    }
+    .about .leftAbout {
+        width: 80%;
+    }
+    .about .leftAbout h4{
+        width: 50%;
+    }
+    .about .rightAbout img { 
+        width: 150px;
+    }
+
+}
+@media (max-width:768px) { 
+    .about {
+        flex-direction: column;
+        height: 350px;
+    }
+    .about .rightAbout { 
+        width: 100%;
+        justify-content: center;
+    
+    }
+    .about .rightAbout img { 
+       
+    }
+    .about .leftAbout { 
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .about .leftAbout h4 { 
+        text-align: center;
+        width: 100%;
+        border-bottom: 2px solid #0089ff;
+    }
+    .about .leftAbout p { 
+        width: 100%;
+        text-align: justify;
+
+    }
+
+
+}
+@media (max-width:576px) { 
+    .about {
+        flex-direction: column;
+        height: 500px;
+    }
+}
+@media (max-width:460px) {
+
+}
+@media (max-width:400px) { 
+
+
 }

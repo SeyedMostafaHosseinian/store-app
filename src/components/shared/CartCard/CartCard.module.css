@@ -3,9 +3,8 @@
     display: flex;
     border-radius: 5px;
     box-shadow: 0 0 8px -1px #ddd;;
-    height: 200px;
     margin: 10px 0;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 21px 15px;
 }
@@ -16,7 +15,7 @@
 .cardLeft {
     width: 76%;
     display: flex;
-    height: 100%;
+    height:150px;
     flex-direction: column;
     justify-content: space-between;
 
@@ -29,8 +28,6 @@
 .topLeftCard h4 {
     font-size: 14px;
     font-weight: normal;
-    width: 77%;
-
 }
 .topLeftCard span {
     font-weight: bold;
@@ -102,4 +99,44 @@
 }
 .unactiveButton {
     opacity: 0.7;
+}
+@media (max-width:992px) {
+    .topLeftCard h4 {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .topLeftCard span { 
+        font-size: 12px;
+    }
+    .productButtons{
+        width: 45%;
+
+    }
+    .cartCard > img {
+        width: 130px;
+        height: 130px;
+
+    }
+    .cardLeft {
+        height: 130px;
+    }
+}
+@media (max-width:768px) { 
+    .cartCard {
+        padding: 15px 10px;
+    }
+    .cartCard > img {
+        width: 110px;
+        height: 110px;
+
+    }
+    .cardLeft {
+        /* height: 120px; */
+    }
+    .productButtons{
+        width: 60%;
+    }
+    .topLeftCard h4 {
+        padding-left: 7px;
+    }
 }

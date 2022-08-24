@@ -15,7 +15,6 @@ import { changeNumberToPersian } from '../../helper/functions';
 
 const Shop = () => {
     const product = useContext(ProductDataContext)
-    console.log(product)
     return (
         <div className={styles.shop}>
             <div className={styles.row1}>

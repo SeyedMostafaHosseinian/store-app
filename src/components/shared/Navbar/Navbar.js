@@ -32,7 +32,7 @@ const Navbar = () => {
     const{cart} = useContext(cartContext)
     return (
         <>
-            <div className={styles.navbar}>
+        <div className={styles.navbar}>
 
             <div className={styles.row1}>
                 <img src={logo}  alt="logo"/>
@@ -78,7 +78,10 @@ const Navbar = () => {
                      <img src={logo} />
                     </div>
                     <div className={styles.resCul3}>
-                        <img src={heartIcon} alt="icon"/>
+                     <Link to="/cart" className={styles.resCartButton}>
+                        <img src={cartIcon}  alt="user"/>
+                        <span>{changeNumberToPersian(cart.total)}</span>
+                     </Link>
                     </div>
                 </div>
                 <div className={styles.buttomRes}>
@@ -94,11 +97,8 @@ const Navbar = () => {
                       <img src={userIcon} />
                       <span>ورود</span>
                   </Link>
-                  <Link to="/cart" className={styles.resCartButton}>
-                        <img src={cartIcon}  alt="user"/>
-                        <span>{changeNumberToPersian(cart.total)}</span>
-                  </Link>
-
+                  <img src={heartIcon} alt="icon"/>
+        
                 </div>
             </div>
             <div style={{ transform:`${show ? "translateX(0)" : "translateX(101%)" }`}} className={styles.hamburgerMenu}>

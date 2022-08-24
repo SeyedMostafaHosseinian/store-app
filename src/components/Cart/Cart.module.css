@@ -46,7 +46,6 @@
 }
 .leftSide .factor {
     width: 100%;
-    height: 322px;
     box-shadow: 0 0 8px -1px #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -128,10 +127,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 .checkOutButton {
-    width: 180px;
+    width: 50%;
     height: 42px;
     border-radius: 5px;
     background-color: #0089FF;
@@ -152,6 +151,7 @@
     margin-left: 5px;
 }
 .clearCart {
+    width: 48%;
     color: red;
     font-size: 14px;
     border: none;
@@ -159,7 +159,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 70px;
     cursor: pointer;
 }
 .emptyCart , .checkout {
@@ -195,7 +194,65 @@
     width: 300px;
     border-radius: 5px;
 }
+@media (max-width:992px) {
+    .cart { 
+        padding:0 15px;
+    }
+    .total1 span, 
+    .total2 span, 
+    .total3 span {
+        font-size: 12px;
+    }
+    .total1,
+    .total2,
+    .total3 {
+        margin-top: 12px;
+        
+    }
+    .checkOut span {
+        font-size: 12px;
+    }
+    .clearCart , .checkOutButton {
+        font-size: 12px;
+        height: 38px
+    }
+    .rightSide {
+        width: 64%;
+        
+    }
+    .leftSide {
+        width: 34.7%;
+        
+    }
+    .cartOptionButtons {
+        margin-top: 15px;
+    }
+    .leftSide .factor {
+        padding: 10px;
+    }
+
+}
+@media (max-width:768px) {
+    .rightSide {
+        width: 58%;
+        
+    }
+    .leftSide {
+        width: 40.5%;
+        
+    }
+
+
+}
 @media (max-width:576px) {
+    .row2 {
+        flex-direction: column;
+    }
+    .leftSide , .rightSide{ 
+        width: 100%;
+    }
+    
+
     .emptyCart {
         margin-top: 30px;
     }

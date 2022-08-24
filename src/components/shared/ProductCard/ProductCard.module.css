@@ -57,8 +57,9 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    width: 16%;
+    width: 14%;
     height: 100%;
+    justify-content: center;
     
 }
 .productButtons > button > img  {
