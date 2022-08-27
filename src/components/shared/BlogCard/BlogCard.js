@@ -14,11 +14,16 @@ import viewsIcon from "../../../assets/views.svg";
 
 const BlogCard = ({data}) => {
 
-    const {author,title,body,like,image,views} = data
+    const {author,title,body,like,image,views,id} = data
+    
     return (
             <div className={styles.BlogCard}>
                 <img src={image} />
-                <h4>{title}</h4>
+                <h4>
+                    <Link to={`/blogs/${id}`}>
+                     {title}
+                    </Link >
+                </h4>
                 <p>{titleShorter(body,100)}</p>
                 <div className={styles.postButtons}>
                     <div className={styles.dateShared}>
@@ -35,7 +40,7 @@ const BlogCard = ({data}) => {
                         </svg>
     
                     </div>
-                    <Link to="/" className={styles.readMoreButton}>
+                    <Link to={`/blogs/${id}`} className={styles.readMoreButton}>
                         ادامه مطلب
                         <img src={bLarrowIcon} alt="icon"/>
                     </Link >

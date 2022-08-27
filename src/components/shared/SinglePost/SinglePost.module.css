@@ -1,0 +1,151 @@
+.singlePost {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 83px;
+}
+.leftAddress {
+    width: 100%;
+    border-top: 1px solid #f0f0f1;
+    padding: 5px 0;
+}
+.leftAddress a {
+    font-size: 12px;
+    text-decoration: none;
+    color:#7b7b7b;
+}
+.leftAddress span {
+    color: #0089FF;
+    font-size: 12px;
+}
+.metaPosts {
+    width: 100%;
+}
+.topAboutPost {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 40px;
+
+}
+.topAboutPost img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.leftAbout  { 
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.leftAbout h4 {
+    color: #2f3640;
+    font-size: 14px;
+
+}
+.leftAbout span {
+    display: flex;
+    justify-content: flex-start;
+    -webkit-text-stroke: 0.3px;
+    font-size: 14px;
+    margin-top: 44px;
+}
+
+.bottomAboutPost  {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #f0f0f1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    min-height: 500px;
+}
+.bottomAboutPost p {
+    width: 100%;
+    color: #2f3640;
+    line-height: 32px;
+    font-size: 16px;
+}
+.bottomAboutPost h2 {
+    width: 100%;
+    color: #2f3640;
+    line-height: 32px;
+    font-size: 18px;
+    margin: 10px 0;
+
+
+}
+.metaPosts {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+.postMetaViews {
+    display: flex;
+    font-size: 12px;
+    color: #868686;
+    align-items: center;
+    width: 40px;
+}
+.postMetaLikes {
+    display: flex;
+    font-size: 12px;
+    color: #868686;
+    align-items: center;
+    width: 30px;
+}
+.postMetaDate {
+    display: flex;
+    font-size: 12px;
+    color: #868686;
+    align-items: center;
+    width: 80px;
+    margin-left: 13px;
+}
+.postMetaDate img {
+    width: 14px;
+    margin-left: 10px;
+}
+.postMetaViews img , .postMetaLikes svg {
+    margin-left: 3px;
+}
+@media (max-width:992px) {
+    .singlePost {
+        padding: 0 15px;
+    }
+    
+}
+@media (max-width:576px) {
+    .topAboutPost {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topAboutPost > img { 
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .leftAbout  { 
+        margin: 20px 0;
+    } 
+    .leftAddress span {
+        font-size: 11px;
+    }
+    .bottomAboutPost p { 
+        text-align: justify;    
+    }
+
+}
+@media (max-width:460px) {
+    .topAboutPost > img { 
+        width: 100%;
+    }
+    .leftAddress span {
+        font-size: 10px;
+    }
+
+}

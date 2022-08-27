@@ -13,6 +13,8 @@ import Landing from './components/Landing/Landing';
 import Cart from './components/Cart/Cart';
 import Footer from './components/shared/Footer/Footer';
 import Shop from './components/Shop/Shop';
+import SingleProduct from './components/shared/SingleProduct/SingleProduct';
+import SinglePost from './components/shared/SinglePost/SinglePost';
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
          <Navbar />
           <Switch>
             <Route path="/cart"  component={Cart} />
+            <Route path="/blogs/:id"  component={SinglePost} />
+            <Route path="/shop/:id"  component={SingleProduct} />
             <Route path="/shop"  component={Shop} />
             <Route path="/"  component={Landing} />
           </Switch>

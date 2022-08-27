@@ -10,6 +10,7 @@ import plusIcon from "../../../assets/plus.svg";
 import subtractionIcon from "../../../assets/subtraction.svg";
 
 import { cartContext } from '../../contexts/CartContextProvider';
+import { Link } from 'react-router-dom';
 
 const ProductCard2 = ({data}) => {
 
@@ -31,7 +32,7 @@ const ProductCard2 = ({data}) => {
         <div className={styles.productCard}>
             <img src={image} alt="thumbnail"/>
             <div className={styles.bodyPro}>
-                <h4>{titleShorter(title,45) }</h4>
+                <h4><Link to={`/shop/${id}`}>{titleShorter(title,45) }</Link></h4>
                 <span>{changeNumberToPersian(price.toLocaleString())} تومان</span>
 
                     <div className={styles.productButtons}>

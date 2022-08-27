@@ -1,13 +1,11 @@
 .BlogCard {
     width: 100%;
-    /* height: 390px; */
-    background: #fff;
-    box-shadow: 0 0 8px -2px #ddd;
-    border-radius: 5px;
     display: flex;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: #002eff0d 0px 8px 24px;
     flex-direction: column;
     align-items: center;
-    /* margin: 10px 0; */
     padding: 10px;
 }
 .BlogCard img {
@@ -16,16 +14,23 @@
     border-radius: 5px;
 }
 .BlogCard h4 { 
-    font-size:13px;
-    color:#656262;
     margin-top: 15px;
     width: 100%;
     padding: 0 0 0 5px;
     line-height: 21px;
     text-align: right;
     height: 85px;
+    font-weight: normal;
+    -webkit-text-stroke: 0.3px;
     
 }
+.BlogCard h4 a { 
+    color:#656262;
+    text-decoration: none;
+    font-size:13px;
+
+}
+
 .BlogCard p { 
     font-size: 12px;
     color: #868686;

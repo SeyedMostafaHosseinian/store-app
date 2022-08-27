@@ -1,4 +1,5 @@
 export const titleShorter = (title,n) => {
+    
     const shortedTitle= []
     const spiltedTitle = title.split("")
     for(let i = 0; i<=n; i++) {

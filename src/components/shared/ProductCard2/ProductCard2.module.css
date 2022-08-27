@@ -16,10 +16,13 @@
 }
 .productCard h4 {
     font-size: 12px;
-    color: #6c6c6c;
     margin-top: 10px;
     font-weight: normal;
     height: 60px;
+}
+.productCard h4 a{
+    text-decoration: none;
+    color: #6c6c6c;
 }
 .productCard span {
     font-size: 14px;

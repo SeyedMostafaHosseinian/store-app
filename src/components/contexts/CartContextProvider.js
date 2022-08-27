@@ -27,7 +27,8 @@ const CartContextProvider = ({children}) => {
                 })
                 state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
                 state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
-            return {
+                console.log(newSelectedItem)
+                return {
                 ...state,
                 selectedItems:[...state.selectedItems],
                 total:state.total,
