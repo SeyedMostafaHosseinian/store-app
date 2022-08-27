@@ -73,6 +73,10 @@
     font-size: 10px;
     cursor: pointer;
 }
+.likeContainer > img {
+    width: 10px;
+    height: 60px;
+}
 .likeContainer svg { 
     margin-right: 2px;
 }

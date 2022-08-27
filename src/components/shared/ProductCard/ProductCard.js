@@ -12,19 +12,25 @@ import subtractionIcon from "../../../assets/subtraction.svg";
 import addToCartIcon  from "../../../assets/add-to-cart.svg";
 
 import { cartContext } from '../../contexts/CartContextProvider';
+import axios from 'axios';
 
 const ProductCard = ({data}) => {
 
     const likeSvg = useRef(null)
-    const {title , image , price ,id } = data;
+    const {title , image , price ,id,like } = data;
     const {cart,dispatch} = useContext(cartContext)
     const quantity = getQuantity(cart.selectedItems,id)
 
     const likeHandler = event => {
         if(event.target.parentElement === likeSvg.current) {
             event.target.parentElement.classList.toggle("activeLike")
+            axios.patch(`https://digistore.glitch.me/products/${id}`,{like:like + 1})
+            
         }
+
+        // console.log(event.target)
     }
+    // console.log(like)
     return (
         <div className={styles.productCard}>
             <img src={image} alt="thumbnail"/>

@@ -19,12 +19,12 @@ const SinglePost = (props) => {
     const id = props.match.params.id;
     const {title,image,body,like,views} = post 
 
-
     useEffect(() => {
         axios.get(`https://digistore.glitch.me/blogs/${id}`)
         .then(response => {
             setPost( response.data)
         })
+        window.scroll(0, 0)
         
     },[])
     return (
