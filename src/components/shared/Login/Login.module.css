@@ -1,0 +1,138 @@
+.loginParent {
+    background: #fff;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.parentForm {
+    width:60%;
+    height:580px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 300;
+    background-color: #fff;
+}
+.formBackground {
+    position: fixed;
+    background-color: rgba(61, 61, 61, 0.703);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: 10px;
+}
+.loginForm , .signUpForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.rightLogin {
+    width: 61.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+}
+.rightLogin button {
+    width: 100%;
+    background-color: #0089ff;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.rightLogin button img{
+    height: 15px;
+}
+.leftLogin {
+    width: 38%;
+    background-color: #0089ff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 150px;
+}       
+.leftLogin h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    /* -webkit-text-stroke: 0.5px; */
+    margin-top: 10px;
+}
+.loginImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    /* background-color: #fff; */
+
+}
+.loginImage img {
+    width: 45px;
+    height: 45px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 95px;
+    
+}
+.row label{
+    font-size: 14px;
+}
+.row input {
+    border: 1px solid #c6c6c6;
+    height: 43px;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+.row span.error {
+    font-size: 12px;
+    color: red;
+    margin-top: 2px;
+}
+.hintLogin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:30px ;
+}
+.hintLogin p {
+    color: #0089ff;
+    font-size: 12px;
+}
+.hintLogin a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0089ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+}
+.signUpForm .row{
+    margin-bottom: 10px;
+}
+.signUpForm .hintLogin {
+    margin-top: 10px;
+}

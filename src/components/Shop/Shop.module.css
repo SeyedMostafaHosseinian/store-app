@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #f0f0f1;
     padding: 10px 0;
 }
 .pageAdress {
@@ -94,6 +93,16 @@
     display: none;
     color: #787878;
 }
+@media (min-width:993px) {
+    .row1 { 
+        border-top: 1px solid #f0f0f1;
+    }
+    
+}
+
+
+
+
 @media (max-width:1200px) {
     .rigthFilter { 
         width: 65%;

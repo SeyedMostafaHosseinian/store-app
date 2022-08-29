@@ -1,0 +1,118 @@
+.searchBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 90;
+    
+}
+.searchBox input{ 
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9;
+    padding: 2px 15px;
+    z-index: 20;
+}
+.searchBox button { 
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    z-index: 30;
+}
+.searchBox button img{
+    width: 18px;
+}
+.results {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 18px 10px 2px;
+    top: 38px;
+    border-radius: 0 0 10px 10px;
+    transition: all 0.3s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    z-index: 130;
+    max-height: 350px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    border-top: none;
+
+
+}
+.results img {
+    width: 100%;
+}
+.resultsTitle {
+    margin: 0 10px;
+}
+.results::-webkit-scrollbar {
+    width: 5px;
+    background: #ebebeb28;
+
+}
+.results::-webkit-scrollbar-thumb {
+    background-color: rgb(142, 142, 142);
+    border-radius: 50px;
+}
+.resultChilds {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.resultChilds a{
+    text-decoration: none;
+    color: #444;
+    font-size: 12px;
+}
+.resultChilds img  {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+.searchCloser {
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: 70;
+}
+.category {
+    color: rgb(134, 134, 134) !important;
+}
+@media (min-width:993px) { 
+    .searchBox { 
+        width: 43%;
+    }
+
+}
+@media (max-width:576px) {
+    .searchBox {
+        z-index: 94;
+        margin-right: 0;
+    }
+    .results {
+        height: 200px;
+    }
+    .resultChilds a {
+        font-size: 8px;
+    }
+    .results::-webkit-scrollbar {
+        width: 5px;
+        background: #ebebeb28;
+    
+    }
+    .results::-webkit-scrollbar-thumb {
+        background-color: rgb(142, 142, 142);
+        border-radius: 50px;
+    }
+
+    
+}

@@ -27,19 +27,21 @@ const CartContextProvider = ({children}) => {
                 })
                 state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
                 state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
-                console.log(newSelectedItem)
-                return {
+    
+            return {
                 ...state,
                 selectedItems:[...state.selectedItems],
                 total:state.total,
                 totalPrice:state.totalPrice,
                 checkout:false
             } 
+
             case"UP_QUANTITY" :
                 const uItem = state.selectedItems.find(item => item.id === action.id)
                 uItem.quantity ++; 
                 state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
                 state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
+            
             return {
                 ...state,
                 selectedItems:[...state.selectedItems],
@@ -50,10 +52,10 @@ const CartContextProvider = ({children}) => {
             }
             case"DOWN_QUANTITY" :
             
-               const dItem = state.selectedItems.find(item => item.id === action.id)
-               dItem.quantity --; 
-               state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
-               state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
+                const dItem = state.selectedItems.find(item => item.id === action.id)
+                dItem.quantity --; 
+                state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
+                state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
                
             return {
                 ...state,
@@ -65,9 +67,9 @@ const CartContextProvider = ({children}) => {
             }      
             case"CLEAR_ITEM":
                  
-               state.selectedItems = state.selectedItems.filter(item => item.id !== action.id )
-               state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
-               state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
+                 state.selectedItems = state.selectedItems.filter(item => item.id !== action.id )
+                 state.total = state.selectedItems.reduce((acc,cur)  => acc + cur.quantity,0 )
+                 state.totalPrice = state.selectedItems.reduce((acc,cur) => acc + (cur.quantity * cur.price) , 0)
              
             return {
                  ...state,

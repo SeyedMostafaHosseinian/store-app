@@ -43,3 +43,71 @@ export const getQuantity = (cart,id) => {
        return quantity
     }
 }
+export const validator = (values,type) => {
+    const errors = {}
+    if(type === "signup") {
+        if(!values.name.trim()) {
+            errors.name = "نام کاربری الزامیست"
+        }
+        else if(values.name.trim().length < 4) {
+            errors.name = "نام کاربری باید ۴ حرف یا بیشتر باشد"
+        }
+        else {
+            delete errors.name
+            console.log(errors)
+        }
+        if(!values.email.trim()) {
+            errors.email = "لطفا یک ایمیل واردکنید"
+
+        }
+        else if(!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(values.email)) {
+            errors.email = "ایمیل وارد شده صحیح نمیباشد"
+        }
+        else {
+            delete errors.email
+        }
+        if(!values.password) {
+            errors.password = "رمز عبور الزامیست"
+        }
+        else if(values.password.length < 6) {
+            errors.password = "  رمز عبور باید ۶ کاراکتر یا بیشتر باشد"
+
+        }
+        else {
+            delete errors.password
+        }
+        if(!values.confirmPassword) {
+            errors.confirmPassword = "تایید رمز عبور را وارد کنید"
+        }
+        else if(values.confirmPassword !== values.password) {
+            errors.confirmPassword = "رمز عبور یکسان نیست"
+        }
+        else {
+            delete errors.confirmPassword
+        }
+    }
+    else if(type = "login") {
+        if(!values.name.trim()) {
+            errors.name = "نام کاربری الزامیست"
+        }
+        else if(values.name.trim().length < 4) {
+            errors.name = "نام کاربری باید ۴ حرف یا بیشتر باشد"
+        }
+        else {
+            delete errors.name
+            console.log(errors)
+        }
+        if(!values.password) {
+            errors.password = "رمز عبور الزامیست"
+        }
+        else if(values.password.length < 6) {
+            errors.password = "  رمز عبور باید ۶ کاراکتر یا بیشتر باشد"
+
+        }
+        else {
+            delete errors.password
+        }
+    }
+    
+    return errors
+}

@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 //styles
 import styles from "./Navbar.module.css";
 
+//components
+import Search from '../Search/Search';
+
 //logo && icons
 import logo from "../../../assets/logo.svg";
 import searchIcon from "../../../assets/search.svg";
@@ -28,6 +31,7 @@ const Navbar = () => {
     const hamburgerMenuShow  = () => {
         setShow(!show)     
     }
+    
 
     const{cart} = useContext(cartContext)
     return (
@@ -36,14 +40,9 @@ const Navbar = () => {
 
             <div className={styles.row1}>
                 <img src={logo}  alt="logo"/>
-                <form className={styles.searchBox}>
-                    <input type="text" placeholder='جستجوی محصولات.' />
-                    <button type="submit">
-                        <img src={searchIcon} alt="icon"/>
-                    </button>
-                </form>
+                <Search />
                 <div className={styles.row1Cul3}>
-                    <Link to="/" className={styles.loginButton}>
+                    <Link to="/signup" className={styles.loginButton}>
                         <img src={userIcon}  alt="user"/>
                         ورود / ثبت نام
                     </Link>
@@ -55,7 +54,6 @@ const Navbar = () => {
                 </div>
                 
             </div>  
-            <div className={styles.line}></div>
             <div className={styles.row2}>
                 <ul>
                     <li><Link className={styles.activePageLink} to="/">صفحه نخست</Link></li>
@@ -86,18 +84,14 @@ const Navbar = () => {
                 </div>
                 <div className={styles.buttomRes}>
                   <div className={styles.resSearchBox}>
-                    <form>
-                      <input type="text" placeholder='جستجوی محصولات...' />
-                      <button type="submit">
-                          <img src={searchIcon} alt="icon"/>
-                      </button>
-                    </form>
+                    {
+                        <Search />
+                    }
                   </div>
+                  <img src={heartIcon} alt="icon"/>
                   <Link className={styles.resLogin} to="/">
-                      <img src={userIcon} />
                       <span>ورود</span>
                   </Link>
-                  <img src={heartIcon} alt="icon"/>
         
                 </div>
             </div>
